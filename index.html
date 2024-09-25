@@ -9,18 +9,29 @@
             display: flex;
             flex-direction: column;
         }
+        #grid-container {
+            display:grid;
+            grid-template-columns: auto auto auto;
+        }
+        #grid-container > div{
+            text-align:center;
+            background: lightblue;
+            border: 3px white;
+            padding:20x;
+        }
     </style>
 </head>
 <body>
     <h1>Recipe Submission Form</h1>
     <form method="get" action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html">
+        <div id="grid-container">
         <div id="box">
         <div>
             <label for="recipe-name">Recipe Name: </label>
             <input type="text" name="recipe-name" id="recipe-name">
         </div>
         <div>
-            <label for="recipe-description">Recipe Name: </label>
+            <label for="recipe-description">Recipe Description: </label>
             <input type="text" name="recipe-description" id="recipe-description">
         </div>
         <div>
@@ -42,7 +53,8 @@
         <div>
             <input type="submit" value="Submit">
         </div>
-    </div>
+        </div>
+        </div>
     </form>
 </body>
 </html>
