@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GC 2</title>
     <style>
-        .box{
+        #box{
             display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <h1>Recipe Submission Form</h1>
     <form method="get" action="https://gu-web-dev-2024.github.io/fake-form-submission/submission.html">
-        <div class="box">
+        <div id="box">
+        <div>
             <label for="recipe-name">Recipe Name: </label>
             <input type="text" name="recipe-name" id="recipe-name">
         </div>
-        <div class="box">
+        <div>
             <label for="recipe-description">Recipe Name: </label>
             <input type="text" name="recipe-description" id="recipe-description">
         </div>
-        <div class="box">
+        <div>
             <label for="prep-time">Preperation Time (in minutes):</label>
             <input type="number" name="prep-time" id="prep-time">
         </div>
@@ -29,17 +31,18 @@
             <label for="ingredients">List of Ingredients: </label>
             <input type="text" name="ingredients" id="ingredients">
         </div>
-        <div class="box">
+        <div>
             <label for="instructions">Cooking Instructions: </label>
             <input type="text" name="instructions" id="instructions">
         </div>
-        <div class="box">
+        <div>
             <label for="image">Image for the Recipe: </label>
             <input type="file" name="image" id="image">
         </div>
-        <div class="box">
+        <div>
             <input type="submit" value="Submit">
         </div>
+    </div>
     </form>
 </body>
 </html>
